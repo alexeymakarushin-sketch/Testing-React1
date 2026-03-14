@@ -19,7 +19,7 @@ export default function AdminLayout() {
   const navigate = useNavigate()
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', background: '#e6edea' }}>
+    <div style={{ display: 'flex', minHeight: '100vh', background: '#ffe4e6' }}>
       {/* Sidebar */}
       <CSidebar
         position="fixed"
@@ -28,7 +28,7 @@ export default function AdminLayout() {
         style={{ zIndex: 1030 }}
       >
         <CSidebarBrand
-          style={{ background: 'var(--cui-sidebar-brand-bg, #2563eb)', cursor: 'pointer' }}
+          style={{ background: 'var(--cui-sidebar-brand-bg, #9f1239)', cursor: 'pointer' }}
           onClick={() => navigate('/')}
         >
           ⚡ MyBrand Admin

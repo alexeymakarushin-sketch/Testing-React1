@@ -1,10 +1,10 @@
 const team = [
-  { name: 'Алексей Петров', role: 'CEO & Co-founder', emoji: '👨‍💼', bg: '#eff6ff', desc: 'Более 15 лет опыта в IT-индустрии. Выпускник МГУ, серийный предприниматель.' },
-  { name: 'Мария Соколова', role: 'CTO', emoji: '👩‍💻', bg: '#f0fdf4', desc: 'Архитектор высоконагруженных систем. Ранее работала в Яндекс и Mail.ru Group.' },
-  { name: 'Дмитрий Ким', role: 'Head of Design', emoji: '🎨', bg: '#fdf4ff', desc: 'Дизайнер с 10-летним опытом. Создавал интерфейсы для Fortune 500 компаний.' },
-  { name: 'Анна Волкова', role: 'Head of Sales', emoji: '📈', bg: '#fff7ed', desc: 'Построила продажи с нуля до $5M ARR за 2 года. Эксперт в B2B продажах.' },
-  { name: 'Сергей Новиков', role: 'Lead Engineer', emoji: '⚙️', bg: '#f0f9ff', desc: 'Fullstack разработчик. Open-source контрибьютор, спикер на tech-конференциях.' },
-  { name: 'Ольга Чернова', role: 'Head of Support', emoji: '💬', bg: '#fef9c3', desc: 'Выстроила систему поддержки с NPS 85+. Специалист по Customer Success.' },
+  { name: 'Алексей Петров', role: 'CEO & Co-founder', emoji: '👨‍💼', bg: '#ffe4e6', desc: 'Более 15 лет опыта в IT-индустрии. Выпускник МГУ, серийный предприниматель.' },
+  { name: 'Мария Соколова', role: 'CTO', emoji: '👩‍💻', bg: '#fecdd3', desc: 'Архитектор высоконагруженных систем. Ранее работала в Яндекс и Mail.ru Group.' },
+  { name: 'Дмитрий Ким', role: 'Head of Design', emoji: '🎨', bg: '#fff1f2', desc: 'Дизайнер с 10-летним опытом. Создавал интерфейсы для Fortune 500 компаний.' },
+  { name: 'Анна Волкова', role: 'Head of Sales', emoji: '📈', bg: '#fda4af', desc: 'Построила продажи с нуля до $5M ARR за 2 года. Эксперт в B2B продажах.' },
+  { name: 'Сергей Новиков', role: 'Lead Engineer', emoji: '⚙️', bg: '#ffe4e6', desc: 'Fullstack разработчик. Open-source контрибьютор, спикер на tech-конференциях.' },
+  { name: 'Ольга Чернова', role: 'Head of Support', emoji: '💬', bg: '#fecdd3', desc: 'Выстроила систему поддержки с NPS 85+. Специалист по Customer Success.' },
 ]
 
 export default function AboutPage() {

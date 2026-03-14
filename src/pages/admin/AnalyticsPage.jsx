@@ -40,9 +40,9 @@ export default function AnalyticsPage() {
           <CCol key={c.label} sm={6} xl={3}>
             <CCard className="border-0 h-100" style={{ boxShadow: '0 2px 8px rgba(0,0,0,.08)' }}>
               <CCardBody>
-                <div style={{ fontSize: '.85rem', color: '#2a8aaa', marginBottom: '.25rem' }}>{c.label}</div>
-                <div style={{ fontSize: '1.75rem', fontWeight: 800, marginBottom: '.25rem', color: '#0d5c7a' }}>{c.value}</div>
-                <small style={{ color: '#1a9a6a' }}>↑ {c.sub}</small>
+                <div style={{ fontSize: '.85rem', color: '#be123c', marginBottom: '.25rem' }}>{c.label}</div>
+                <div style={{ fontSize: '1.75rem', fontWeight: 800, marginBottom: '.25rem', color: '#7f1d1d' }}>{c.value}</div>
+                <small style={{ color: '#dc2626' }}>↑ {c.sub}</small>
               </CCardBody>
             </CCard>
           </CCol>
@@ -60,12 +60,12 @@ export default function AnalyticsPage() {
               <div style={{ display: 'flex', alignItems: 'flex-end', gap: '12px', height: '180px', padding: '0 8px' }}>
                 {monthlyData.map((d) => (
                   <div key={d.month} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px' }}>
-                    <span style={{ fontSize: '.75rem', color: '#2a8aaa' }}>{(d.visits / 1000).toFixed(1)}k</span>
+                    <span style={{ fontSize: '.75rem', color: '#be123c' }}>{(d.visits / 1000).toFixed(1)}k</span>
                     <div
                       style={{
                         width: '100%',
                         height: `${(d.visits / maxVisits) * 140}px`,
-                        background: 'linear-gradient(180deg, #0e8080, #4abcb4)',
+                        background: 'linear-gradient(180deg, #9f1239, #f43f5e)',
                         borderRadius: '4px 4px 0 0',
                         transition: 'height .3s',
                       }}
@@ -121,12 +121,12 @@ export default function AnalyticsPage() {
                   <div className="d-flex justify-content-between align-items-center mb-1">
                     <div>
                       <strong style={{ fontSize: '.9rem' }}>{p.title}</strong>
-                      <span style={{ fontSize: '.8rem', color: '#2a8aaa', marginLeft: '.5rem' }}>{p.page}</span>
+                      <span style={{ fontSize: '.8rem', color: '#be123c', marginLeft: '.5rem' }}>{p.page}</span>
                     </div>
-                    <div className="d-flex gap-3" style={{ fontSize: '.8rem', color: '#2a8aaa' }}>
+                    <div className="d-flex gap-3" style={{ fontSize: '.8rem', color: '#be123c' }}>
                       <span>Отказы: {p.bounce}</span>
                       <span>Время: {p.time}</span>
-                      <strong style={{ color: '#0d5c7a' }}>{p.visits.toLocaleString('ru')}</strong>
+                      <strong style={{ color: '#7f1d1d' }}>{p.visits.toLocaleString('ru')}</strong>
                     </div>
                   </div>
                   <CProgress thin>

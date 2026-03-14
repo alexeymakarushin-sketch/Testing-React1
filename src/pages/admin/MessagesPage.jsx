@@ -41,8 +41,8 @@ export default function MessagesPage() {
               onClick={() => open(m)}
               style={{
                 cursor: 'pointer',
-                background: m.read ? '#f2f6f3' : '#d8eee4',
-                borderLeft: m.read ? '3px solid transparent' : '3px solid #2563eb',
+                background: m.read ? '#fff1f2' : '#ffe4e6',
+                borderLeft: m.read ? '3px solid transparent' : '3px solid #dc2626',
                 transition: 'background .15s',
               }}
             >
@@ -51,14 +51,14 @@ export default function MessagesPage() {
                   <div className="d-flex align-items-center gap-2 mb-1">
                     {!m.read && <CBadge color="primary" style={{ fontSize: '.7rem' }}>Новое</CBadge>}
                     <strong style={{ fontSize: '.95rem' }}>{m.from}</strong>
-                    <span style={{ fontSize: '.8rem', color: '#2a8aaa' }}>— {m.email}</span>
+                    <span style={{ fontSize: '.8rem', color: '#be123c' }}>— {m.email}</span>
                   </div>
                   <div style={{ fontWeight: m.read ? 400 : 700, marginBottom: '.25rem' }}>{m.subject}</div>
-                  <div style={{ fontSize: '.85rem', color: '#2a8aaa', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  <div style={{ fontSize: '.85rem', color: '#be123c', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                     {m.message}
                   </div>
                 </div>
-                <div style={{ fontSize: '.8rem', color: '#4aabca', whiteSpace: 'nowrap' }}>{m.date}</div>
+                <div style={{ fontSize: '.8rem', color: '#be123c', whiteSpace: 'nowrap' }}>{m.date}</div>
               </div>
             </CListGroupItem>
           ))}
@@ -72,7 +72,7 @@ export default function MessagesPage() {
               <CModalTitle>{selected.subject}</CModalTitle>
             </CModalHeader>
             <CModalBody>
-              <div className="mb-3 p-3 rounded" style={{ background: '#e0ece6', fontSize: '.9rem' }}>
+              <div className="mb-3 p-3 rounded" style={{ background: '#ffe4e6', fontSize: '.9rem' }}>
                 <div><strong>От:</strong> {selected.from} ({selected.email})</div>
                 <div><strong>Дата:</strong> {selected.date}</div>
               </div>

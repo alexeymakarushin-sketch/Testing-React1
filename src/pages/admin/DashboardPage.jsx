@@ -7,10 +7,10 @@ import CIcon from '@coreui/icons-react'
 import { cilPeople, cilCart, cilDollar, cilArrowTop } from '@coreui/icons'
 
 const stats = [
-  { title: 'Пользователи', value: '12,489', change: '+12%', icon: cilPeople, color: 'primary', bg: '#d0e8e0' },
-  { title: 'Заказы', value: '3,247', change: '+8%', icon: cilCart, color: 'success', bg: '#c8e4d8' },
-  { title: 'Выручка', value: '₽2.4M', change: '+23%', icon: cilDollar, color: 'warning', bg: '#d8e8d8' },
-  { title: 'Конверсия', value: '4.6%', change: '+1.2%', icon: cilArrowTop, color: 'info', bg: '#cce0dc' },
+  { title: 'Пользователи', value: '12,489', change: '+12%', icon: cilPeople, color: 'danger', bg: '#ffe4e6' },
+  { title: 'Заказы', value: '3,247', change: '+8%', icon: cilCart, color: 'danger', bg: '#fecdd3' },
+  { title: 'Выручка', value: '₽2.4M', change: '+23%', icon: cilDollar, color: 'danger', bg: '#fda4af' },
+  { title: 'Конверсия', value: '4.6%', change: '+1.2%', icon: cilArrowTop, color: 'danger', bg: '#ffe4e6' },
 ]
 
 const orders = [
@@ -53,7 +53,7 @@ export default function DashboardPage() {
                   </div>
                 </div>
                 <CBadge color={s.color} className="me-1">↑ {s.change}</CBadge>
-                <span style={{ fontSize: '.8rem', color: '#2a8aaa' }}>vs прошлый месяц</span>
+                <span style={{ fontSize: '.8rem', color: '#be123c' }}>vs прошлый месяц</span>
               </CCardBody>
             </CCard>
           </CCol>

@@ -72,11 +72,11 @@ export default function SettingsPage() {
             {/* Profile tab */}
             {tab === 'profile' && (
               <CForm>
-                <div className="d-flex align-items-center gap-4 mb-4 p-3 rounded" style={{ background: '#dceae2' }}>
+                <div className="d-flex align-items-center gap-4 mb-4 p-3 rounded" style={{ background: '#ffe4e6' }}>
                   <CAvatar color="primary" textColor="white" size="xl" style={{ fontSize: '1.5rem' }}>ИА</CAvatar>
                   <div>
                     <div style={{ fontWeight: 700, fontSize: '1.1rem' }}>{profile.firstName} {profile.lastName}</div>
-                    <div style={{ color: '#2a8aaa', fontSize: '.9rem' }}>{profile.email}</div>
+                    <div style={{ color: '#be123c', fontSize: '.9rem' }}>{profile.email}</div>
                     <CBadge color="danger" className="mt-1">Администратор</CBadge>
                   </div>
                   <CButton color="light" size="sm" className="ms-auto">Сменить фото</CButton>
@@ -124,7 +124,7 @@ export default function SettingsPage() {
               <CForm style={{ maxWidth: '480px' }}>
                 <div className="mb-4">
                   <h6 style={{ fontWeight: 700 }}>Изменить пароль</h6>
-                  <p style={{ fontSize: '.9rem', color: '#2a8aaa' }}>Используйте надёжный пароль длиной не менее 8 символов.</p>
+                  <p style={{ fontSize: '.9rem', color: '#be123c' }}>Используйте надёжный пароль длиной не менее 8 символов.</p>
                 </div>
                 <CRow className="g-3">
                   <CCol md={12}>
@@ -160,7 +160,7 @@ export default function SettingsPage() {
                   <div key={n.key} className="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
                     <div>
                       <div style={{ fontWeight: 600 }}>{n.label}</div>
-                      <div style={{ fontSize: '.85rem', color: '#2a8aaa' }}>{n.desc}</div>
+                      <div style={{ fontSize: '.85rem', color: '#be123c' }}>{n.desc}</div>
                     </div>
                     <CFormCheck
                       type="switch"
@@ -179,7 +179,7 @@ export default function SettingsPage() {
                   <div key={n.key} className="d-flex align-items-center justify-content-between mb-3 pb-3 border-bottom">
                     <div>
                       <div style={{ fontWeight: 600 }}>{n.label}</div>
-                      <div style={{ fontSize: '.85rem', color: '#2a8aaa' }}>{n.desc}</div>
+                      <div style={{ fontSize: '.85rem', color: '#be123c' }}>{n.desc}</div>
                     </div>
                     <CFormCheck
                       type="switch"
@@ -199,12 +199,12 @@ export default function SettingsPage() {
               <div>
                 <div className="mb-4">
                   <h6 style={{ fontWeight: 700 }}>Двухфакторная аутентификация</h6>
-                  <p style={{ fontSize: '.9rem', color: '#2a8aaa' }}>Повысьте безопасность вашего аккаунта.</p>
+                  <p style={{ fontSize: '.9rem', color: '#be123c' }}>Повысьте безопасность вашего аккаунта.</p>
                   <div className="d-flex align-items-center gap-3 p-3 rounded border">
                     <span style={{ fontSize: '2rem' }}>🔐</span>
                     <div style={{ flex: 1 }}>
                       <div style={{ fontWeight: 600 }}>Authenticator App</div>
-                      <div style={{ fontSize: '.85rem', color: '#2a8aaa' }}>Используйте Google Authenticator или Authy</div>
+                      <div style={{ fontSize: '.85rem', color: '#be123c' }}>Используйте Google Authenticator или Authy</div>
                     </div>
                     <CBadge color="secondary">Не настроено</CBadge>
                     <CButton size="sm" color="primary">Настроить</CButton>
@@ -221,7 +221,7 @@ export default function SettingsPage() {
                       <span style={{ fontSize: '1.5rem' }}>💻</span>
                       <div style={{ flex: 1 }}>
                         <div style={{ fontWeight: 600, fontSize: '.9rem' }}>{s.device}</div>
-                        <div style={{ fontSize: '.8rem', color: '#2a8aaa' }}>IP: {s.ip} · {s.time}</div>
+                        <div style={{ fontSize: '.8rem', color: '#be123c' }}>IP: {s.ip} · {s.time}</div>
                       </div>
                       {s.current ? <CBadge color="success">Текущая</CBadge> : <CButton size="sm" color="danger" variant="ghost">Завершить</CButton>}
                     </div>
